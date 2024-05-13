@@ -1,0 +1,116 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "sge.Aplicacion/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/sge.Aplicacion.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/sge.Aplicacion.dll": {}
+        }
+      },
+      "sge.Repositorios/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "sge.Aplicacion": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/sge.Repositorios.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/sge.Repositorios.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "sge.Aplicacion/1.0.0": {
+      "type": "project",
+      "path": "../sge.Aplicacion/sge.Aplicacion.csproj",
+      "msbuildProject": "../sge.Aplicacion/sge.Aplicacion.csproj"
+    },
+    "sge.Repositorios/1.0.0": {
+      "type": "project",
+      "path": "../sge.Repositorios/sge.Repositorios.csproj",
+      "msbuildProject": "../sge.Repositorios/sge.Repositorios.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "sge.Aplicacion >= 1.0.0",
+      "sge.Repositorios >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\MiPc\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\MiPc\\proyectosDotnet\\sge\\sge.Consola\\sge.Consola.csproj",
+      "projectName": "sge.Consola",
+      "projectPath": "C:\\Users\\MiPc\\proyectosDotnet\\sge\\sge.Consola\\sge.Consola.csproj",
+      "packagesPath": "C:\\Users\\MiPc\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\MiPc\\proyectosDotnet\\sge\\sge.Consola\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\MiPc\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "C:\\Users\\MiPc\\proyectosDotnet\\sge\\sge.Aplicacion\\sge.Aplicacion.csproj": {
+              "projectPath": "C:\\Users\\MiPc\\proyectosDotnet\\sge\\sge.Aplicacion\\sge.Aplicacion.csproj"
+            },
+            "C:\\Users\\MiPc\\proyectosDotnet\\sge\\sge.Repositorios\\sge.Repositorios.csproj": {
+              "projectPath": "C:\\Users\\MiPc\\proyectosDotnet\\sge\\sge.Repositorios\\sge.Repositorios.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
